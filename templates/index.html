@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Aviator Predictor Dashboard</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Aviator Predictor Advanced</h1>
+    {% if error %}
+      <p class="error">{{ error }}</p>
+    {% else %}
+      <p class="prediction">🔮 Next value predicted: <strong>{{ prediction }}</strong></p>
+      <div class="stats">
+        <h2>Stats des derniers multiplicateurs</h2>
+        <p>Count: {{ stats.count }}, Avg: {{ stats.average }}, Max: {{ stats.max }}, Min: {{ stats.min }}</p>
+      </div>
+    {% endif %}
+    <a href="/refresh" class="btn">🔄 Refresh Data</a>
+    <h2>📜 History of Predictions</h2>
+    <ul>
+      {% for val, ts in history %}
+        <li>{{ ts }} → {{ val }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+</body>
+</html>
