@@ -1,33 +1,30 @@
-# 🎯 AviatorPredictor Advanced
+# AviatorPredictor
 
-Un projet complet de prédiction du jeu **Aviator** en ligne, utilisant :
-- 🔮 Un modèle d’intelligence artificielle LSTM
-- 📈 Un scraping dynamique avec Playwright
-- 📊 Un dashboard de statistiques prédictives
-- 📁 Base de données SQLite pour stocker historiques et prédictions
-- 🌐 Interface web Flask + HTML/CSS responsive
+Ce projet utilise l'intelligence artificielle (LSTM) pour prédire les multiplicateurs du jeu Aviator sur Premier Bet. Il comprend :
 
----
+- 🧠 Un modèle de prédiction LSTM entraîné
+- 🔍 Un scraping dynamique des multiplicateurs via Playwright
+- 🌐 Une interface web Flask avec dashboard et historique
+- 📊 Une base de données SQLite pour stocker les prédictions
 
-## 🚀 Fonctionnalités principales
+## Déploiement
 
-- Récupération automatique des derniers multiplicateurs du jeu Aviator (PremierBet)
-- Prédiction en temps réel de la prochaine côte (sera-t-elle > 2x ? > 5x ?)
-- Interface utilisateur simple avec bouton de rafraîchissement
-- Historique des prédictions stocké en base de données
-- Visualisation des prédictions dans un tableau (dashboard)
-
----
-
-## 📦 Structure du projet
-
-
----
-
-## 🔧 Installation (localement ou sur Replit)
-
+1. Clone le repo :
 ```bash
 git clone https://github.com/kevine02/aviatorpredictor.git
 cd aviatorpredictor
+```
+
+2. Installe les dépendances :
+```bash
 pip install -r requirements.txt
+```
+
+3. Lance l’application :
+```bash
 python app.py
+```
+
+## Auteur
+
+**@kevine02** sur GitHub
